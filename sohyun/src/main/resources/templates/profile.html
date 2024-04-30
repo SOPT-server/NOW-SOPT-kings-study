@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>User Profile</h1>
+<p>Name: <span th:text="${name}"></span></p>
+<p>Email: <span th:text="${email}"></span></p>
+<img th:src="${picture}" alt="User Profile Picture">
+</body>
+</html>
